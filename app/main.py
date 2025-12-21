@@ -12,7 +12,6 @@ models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI(title="Blog App")
 
-app.mount("/static", StaticFiles(directory="../static"), name="static")
 templates = Jinja2Templates(directory="../templates")
 
 # Подключаем роутеры
@@ -22,3 +21,4 @@ app.include_router(posts.router, prefix="/api/v1", tags=["posts"])
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
