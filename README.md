@@ -18,10 +18,10 @@
 ## Ссылки
 
 - **Репозиторий**: https://github.com/Q-A-D/fastapi-blog-project  
-- **Рабочее приложение**: https://fastapi-blog-project-zl2b.onrender.com  
 - **Документация API**: https://fastapi-blog-project-zl2b.onrender.com/docs  
 
 ## Зависимости
 
 Перечислены в файле `requirements.txt`.  
 Пример файла окружения: `.env.example`.
+
